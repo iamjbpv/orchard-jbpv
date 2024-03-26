@@ -17,4 +17,4 @@ Hi there! I'm Jan Brian Villamayor and I'm excited to present this project that 
 - i also use typescript so that i can see the defects early while on the development.
 - i decided to use bootstrap cause it is bare and theres not much override needed to the core styling.
 - the app is responsive and tested using the chrome dev tools.
-- i also deployed this to vercel, it can be access here https://orchard-jbpv-mzsmpmk04-iamjbpvs-projects.vercel.app/
+- i also deployed this to vercel, it can be access here https://orchard-jbpv.vercel.app/
