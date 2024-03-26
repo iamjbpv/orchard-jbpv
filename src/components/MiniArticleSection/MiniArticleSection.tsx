@@ -23,9 +23,7 @@ export const MiniArticleSection = () => {
                 home.
               </p>
             </div>
-            <a href="#" onClick={(e: any) => console.log(e)}>
-              READ MORE
-            </a>
+            <a onClick={(e: any) => console.log(e)}>READ MORE</a>
           </Col>
           <Col md={6} lg={4} className="article-item mb-5 mb-lg-0">
             <div className="img-container">
@@ -39,9 +37,7 @@ export const MiniArticleSection = () => {
                 your guests.
               </p>
             </div>
-            <a href="#" onClick={(e: any) => console.log(e)}>
-              READ MORE
-            </a>
+            <a onClick={(e: any) => console.log(e)}>READ MORE</a>
           </Col>
           <Col md={6} lg={4} className="article-item mb-5 mb-lg-0">
             <div className="img-container">
@@ -55,9 +51,7 @@ export const MiniArticleSection = () => {
                 products - and the best out of your food.
               </p>
             </div>
-            <a href="#" onClick={(e: any) => console.log(e)}>
-              READ MORE
-            </a>
+            <a onClick={(e: any) => console.log(e)}>READ MORE</a>
           </Col>
         </Row>
       </Container>

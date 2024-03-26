@@ -4,32 +4,50 @@ import Image1 from "../../assets/component-01/Image-01.jpg";
 import Image2 from "../../assets/component-01/Image-02.jpg";
 import Image3 from "../../assets/component-01/Image-03.jpg";
 import "./InfoSection.scss";
+import { useState } from "react";
+import Modal from "react-bootstrap/Modal";
 
 export const InfoSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [selectedImage, setSelectedImage] = useState<any>(false);
+
+  const handleModalOpen = (imageSrc: any) => {
+    setSelectedImage(imageSrc);
+    setIsModalOpen(true);
+  };
   return (
     <div className="info-section">
+      <Modal show={isModalOpen} onHide={() => setIsModalOpen(false)} centered>
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body>
+          <Image src={selectedImage} width={"100%"} />
+        </Modal.Body>
+      </Modal>
       <Container>
         <Row>
           <Col md={6} lg={8} className="order-2 order-md-1">
             <Row>
-              <Col
-                md={12}
-                lg={6}
-                className="mb-4 mb-lg-0 main-image"
-              >
+              <Col md={12} lg={6} className="mb-4 mb-lg-0 main-image">
                 <Image
                   src={Image1}
                   width={"100%"}
                   style={{ objectFit: "cover" }}
+                  onClick={() => handleModalOpen(Image1)}
                 />
               </Col>
               <Col md={12} lg={6}>
                 <div className="flex-v-gallery">
                   <div className="w-100">
-                    <Image src={Image2} />
+                    <Image
+                      src={Image2}
+                      onClick={() => handleModalOpen(Image2)}
+                    />
                   </div>
                   <div className="w-100">
-                    <Image src={Image3} />
+                    <Image
+                      src={Image3}
+                      onClick={() => handleModalOpen(Image3)}
+                    />
                   </div>
                 </div>
               </Col>
