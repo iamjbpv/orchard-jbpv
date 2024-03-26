@@ -9,6 +9,10 @@
       object-position: top center;
     }
   }
+  .main-image img:hover {
+    transition: all 0.3s;
+    scale: 101%;
+  }
 
   .flex-v-gallery {
     display: flex;
@@ -26,12 +30,16 @@
         height: 100%;
         object-fit: cover;
       }
+
+      img:hover {
+        transition: all 0.3s;
+        scale: 101%;
+      }
     }
   }
   .info-text-container {
     margin-top: 3px;
     h3 {
-      color: #ffffff;
       font-weight: 300;
     }
     hr {
@@ -39,7 +47,6 @@
       opacity: 1;
     }
     p {
-      color: #d1d2d2;
       font-size: 19.5px;
       font-weight: 300;
       line-height: 34px;
@@ -49,7 +56,6 @@
       color: #cf1430;
     }
     strong {
-      color: #ffffff;
       font-size: 19.5px;
       line-height: 34px;
       font-weight: 400;
@@ -77,6 +83,8 @@
   .info-section {
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 2%;
+    padding-right: 2%;
     .main-image {
       img {
         height: 300px;
